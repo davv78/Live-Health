@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/cream"
+    tools:context=".Emergency.customerService.CallCustomerServiceActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/customer_service"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/shapeableImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:src="@drawable/cscall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:shapeAppearanceOverlay="@style/ImageViewShape" />
+
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/duration"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shapeableImageView"
+        app:layout_constraintVertical_bias="0.046"
+        tools:layout_editor_absoluteX="25dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/keypad"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/rounded_background"
+        android:scaleType="center"
+        android:src="@drawable/keypad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/duration"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/ImageViewShape" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/mute"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/white"
+        android:src="@drawable/mute"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/keypad"
+        app:layout_constraintTop_toBottomOf="@+id/duration"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/ImageViewShape" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/speaker"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/speaker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mute"
+        app:layout_constraintTop_toBottomOf="@+id/duration"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/ImageViewShape" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/more"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/white"
+        android:scaleType="centerInside"
+        android:src="@drawable/more"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toEndOf="@+id/speaker"
+        app:layout_constraintTop_toBottomOf="@+id/duration"
+        app:layout_constraintVertical_bias="0.0"
+        app:shapeAppearanceOverlay="@style/ImageViewShape" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/call_end"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="50dp"
+        android:scaleType="center"
+        android:background="@color/red"
+        android:src="@drawable/call_end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speaker"
+        app:shapeAppearanceOverlay="@style/ImageViewShape" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

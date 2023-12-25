@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project"
+        tools:targetApi="31">
+        <activity
+            android:name=".nonEmergency.pelatihan.userProfile.ProfileUser"
+            android:exported="false" />
+        <activity
+            android:name=".Emergency.Hospital.ListHospital"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.pelatihan.BelumterdaftarPelatihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.pelatihan.sertifikat.ClaimSertifikatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.pelatihan.lupaPassword.KonfirmasiPWActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.pelatihan.lupaPassword.KodeVerifActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.pelatihan.lupaPassword.LupaPwActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.pelatihan.DeskPelatihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NonEmergency.Pelatihan.Register.RegisterActivity"
+            android:exported="false" />
+        <activity
+         android:name=".NonEmergency.Pelatihan.Login.LoginActivity"
+        android:exported="false" />
+        <activity
+            android:name=".Emergency.Ambulance.CallAmbulanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Emergency.Ambulance.ListAmbulanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Emergency.customerService.CallCustomerServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.tutorial.LukaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.tutorial.PendarahanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.tutorial.SakitKepalaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.tutorial.TenggelamActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.tutorial.SeranganJantungActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.tutorial.KecelakanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.tutorial.AsmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.pelatihan.PelatihanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.tutorial.CprActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.CardNonEmergecnyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Emergency.EmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".nonEmergency.NonEmergencyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

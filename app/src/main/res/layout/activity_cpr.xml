@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".nonEmergency.tutorial.CprActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageButton
+            android:id="@+id/back_cpr"
+            android:layout_width="56dp"
+            android:layout_height="54dp"
+            android:backgroundTint="@color/red"
+            android:src="@drawable/back1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteY="8dp">
+        </ImageButton>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="232dp"
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="CPR"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewcpr"
+        android:layout_width="326dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.286"
+        tools:ignore="MissingConstraints">
+
+        <VideoView
+            android:id="@+id/video_cpr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </VideoView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="642dp"
+        android:layout_height="870dp"
+        android:src="@drawable/bgbawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewcpr"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="315dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Cara Melakukan CPR"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewcpr"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="385dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/deskripsi_cpr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="387dp"-->
+    <!--        android:layout_height="73dp"-->
+    <!--        android:layout_marginTop="12dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="20dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.21"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:layout_marginRight="5dp"-->
+    <!--                android:src="@drawable/img_19" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="343dp"-->
+    <!--                android:layout_height="43dp"-->
+    <!--                android:text="Baringkan tubuh korban pada permukaan datar dan keras"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                tools:layout_editor_absoluteX="23dp"-->
+    <!--                tools:layout_editor_absoluteY="445dp" />-->
+
+    <!--        </LinearLayout>-->
+
+
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="68dp"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:padding="20dp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/textView">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:orientation="horizontal">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="5dp"-->
+    <!--                android:layout_marginRight="5dp"-->
+    <!--                android:src="@drawable/img_19" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="306dp"-->
+    <!--                android:layout_height="37dp"-->
+    <!--                android:text="Posisikan diri Anda di samping bahu dan leher pasien"-->
+    <!--                tools:layout_editor_absoluteX="23dp"-->
+    <!--                tools:layout_editor_absoluteY="445dp" />-->
+    <!--        </LinearLayout>-->
+    <!--    </LinearLayout>-->
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="366dp"-->
+    <!--        android:layout_height="44dp"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.814"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        tools:layout_editor_absoluteY="534dp">-->
+
+    <!--        <ImageView-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginTop="5dp"-->
+    <!--            android:layout_marginRight="5dp"-->
+    <!--            android:src="@drawable/img_19" />-->
+
+    <!--        <TextView-->
+    <!--            android:layout_width="343dp"-->
+    <!--            android:layout_height="43dp"-->
+    <!--            android:text="Baringkan tubuh korban pada permukaan datar dan keras"-->
+    <!--            android:textColor="@color/black"-->
+    <!--            tools:layout_editor_absoluteX="23dp"-->
+    <!--            tools:layout_editor_absoluteY="445dp" />-->
+
+    <!--    </LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

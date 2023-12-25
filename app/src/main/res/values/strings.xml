@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Massive_Project</string>
+    <string name="emergency">Emergency</string>
+    <string name="customer_service">Customer Service</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="duration">00:57</string>
+    <string name="P3k">pelatihan pertama pada kecelakaan (P3K)</string>
+</resources>

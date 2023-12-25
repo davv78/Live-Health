@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".NonEmergency.Pelatihan.Login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/back_login"
+        android:layout_width="26dp"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/back1"
+        android:layout_marginLeft="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="-5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingTop="18dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColorHint="@color/black"
+        android:layout_marginRight="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Masukan Email / No HP ">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/form" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password"
+        android:layout_below="@+id/input_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/black"
+        android:hint="Masukan Password"
+        android:layout_marginRight="20dp"
+        app:endIconMode="password_toggle"
+        app:endIconMinSize="60dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/formpw" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/lupapw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Forgot Password ?"
+        android:textColor="@color/red" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_below="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape"
+        android:backgroundTint="@color/red"
+        android:text="LOGIN"
+        android:fontFamily="@font/poppinssemibold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/login"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don’t have account ?"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Register Now"
+            android:textColor="@color/red"
+            android:fontFamily="@font/poppinsbold"
+            android:id="@+id/btn_daftar"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
